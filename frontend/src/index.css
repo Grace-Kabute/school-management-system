@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: grid;
+  overflow: hidden;
+  grid-template-areas:
+    "one one one one one one one"
+    "two four four four four four four"
+    "two four four four four four four"
+    "two four four four four four four";
+}
+
+.topNavbar {
+  grid-area: one;
+  height: 66px;
+  border: 1px solid black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.sideNavigation {
+  grid-area: two;
+  border: 1px solid black;
+  height: calc(100vh - 63px);
+  width: 250px;
+  position: fixed;
+  top: 63px; 
+  left: 0;
+  background-color: #f8f9fa;
+  z-index: 5;
+}
+
+.mainBox {
+  grid-area: four;
+  overflow-x: auto;
+  margin-top: 63px;
+  margin-left: 260px;
+  height: calc(100vh - 63px);
+}

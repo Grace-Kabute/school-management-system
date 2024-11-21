@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .list-container th,
+  .list-container td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .list-container th {
+    background-color: #f0f9f0;
+    font-weight: bold;
+  }
+
+  .card{
+    border: black solid 1px;
+    width: 300px;
+    padding: 30px;
+    background-color: lightblue;
+    text-align: center;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 30px;
+  }
+  
